@@ -1,10 +1,15 @@
 #include <stdio.h>
 
-static char text[] = "Hello Sonatype Lift !";
+static char text[] = "Hello Rohan!";
 
 int main() {
     char * printme = text;
+    printme = NULL;
+    printme[0] = 'X';
+    printme[1] = 'X';
+    printme[2] = 'X';
+    printme[3] = '\0';
     printf("%s\n",printme);
-    // this is a comment I am making to test merging things into GitHub
     return 0;
+    //my name is Rohan Bhaumik and I rock
 }
